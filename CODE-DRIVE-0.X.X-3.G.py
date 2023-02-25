@@ -2,7 +2,7 @@ import openai
 import tkinter as tk
 
 # Set the API key
-openai.api_key = ""
+openai.api_key  "" 
 
 class TextEditor:
     def __init__(self, master):
@@ -45,7 +45,7 @@ class TextEditor:
         # Use the GPT-3 API to generate the code
         prompt = f"Write a {language} program that {description}"
         response = openai.Completion.create(
-            model="ttext-embedding-ada-002",
+            model="text-embedding-ada-002",
             prompt=prompt,
             temperature=0.7,
             max_tokens=1024,
